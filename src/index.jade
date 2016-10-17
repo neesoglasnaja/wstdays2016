@@ -23,19 +23,20 @@ html(lang='ru')
       p Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja') @neesoglasnaja
         | )
-    +slide({header: "Проблема", shout: true})
+      +cover('pictures/cover.png')
+    +slide({header: "Проблема", classes: "label-header"})
       img(src='pictures/long-hell.png', width="100%")
-    +slide({header: "Модульность!", shout: true})
-    +slide({header: "Подход к организации кода"})
+    +slide({header: "Модульность!", shout: true, classes: 'cover label-header'})
+      +cover('pictures/cover-blur.png')
+    +slide({header: "Подход к организации кода", classes: "label-header"})
       p две картинки
-    +slide({classes:'cover menu-slide'}) 
-      h2.transparent Инструменты
+    +slide({classes:'cover menu-slide'})
       ul
         li.selected-item Pug (Jade)
         li.transparent PostCSS
         li.transparent ES6 / Babel
         li.transparent Webpack
-        li.transparent Оптимизаторы, линтеры
+      +cover('pictures/cover-blur.png')
     +slide({header: "Webpack"})
       img(src='pictures/webpack.png', width="40%")
     +slide({header: "PostCSS"})
@@ -45,16 +46,18 @@ html(lang='ru')
       img(src='pictures/babel.png', width="40%")
     +slide({header: "Оптимизаторы, линтеры"})
       img(src='pictures/eslint.jpg', width="40%")
-
-    +slide({header: "Design patterns"})
-      img(src='pictures/patterns.jpg', width="40%")
-    +slide({header: "Модульность в ES5", shout: true})
+    +slide({header: "Модульность", shout: true, classes: 'cover label-header'})
+      +cover('pictures/cover-blur.png')
+    +slide({header: "Design patterns", classes: "label-header"})
+      p
+        img(src='pictures/patterns.jpg', width="40%")
+    +slide({header: "Модульность в ES5", classes: "label-header"})
       ul
         li AMD
         li CommonJS
         li UMD
-    +slide({header: "Модульность в ES6", shout: true})      
-    +slide({header: "Код в модуле", shout: true})
+    +slide({header: "Модульность в ES6", classes: "label-header"})      
+    +slide({header: "Код в модуле", classes: "label-header"})
     +slide({header: "Вместо вывода", classes: "label-header"})
       img(src='pictures/today.jpg', width="100%")
     .progress

@@ -23,7 +23,40 @@ html(lang='ru')
       p Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja') @neesoglasnaja
         | )
-    
+    +slide({header: "Проблема", shout: true})
+      img(src='pictures/long-hell.png', width="100%")
+    +slide({header: "Модульность!", shout: true})
+    +slide({header: "Подход к организации кода"})
+      p две картинки
+    +slide({classes:'cover menu-slide'}) 
+      h2.transparent Инструменты
+      ul
+        li.selected-item Pug (Jade)
+        li.transparent PostCSS
+        li.transparent ES6 / Babel
+        li.transparent Webpack
+        li.transparent Оптимизаторы, линтеры
+    +slide({header: "Webpack"})
+      img(src='pictures/webpack.png', width="40%")
+    +slide({header: "PostCSS"})
+      img(src='pictures/postcss.png', width="40%")
+    +slide({header: "ES6 / Babel"})
+      img(src='pictures/es6.png', width="40%")
+      img(src='pictures/babel.png', width="40%")
+    +slide({header: "Оптимизаторы, линтеры"})
+      img(src='pictures/eslint.jpg', width="40%")
+
+    +slide({header: "Design patterns"})
+      img(src='pictures/patterns.jpg', width="40%")
+    +slide({header: "Модульность в ES5", shout: true})
+      ul
+        li AMD
+        li CommonJS
+        li UMD
+    +slide({header: "Модульность в ES6", shout: true})      
+    +slide({header: "Код в модуле", shout: true})
+    +slide({header: "Вместо вывода", classes: "label-header"})
+      img(src='pictures/today.jpg', width="100%")
     .progress
     script(src='shower/shower.min.js')
     script(src="vendor/highlight.min.js")

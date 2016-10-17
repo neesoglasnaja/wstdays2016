@@ -1,0 +1,31 @@
+include ./blocks/slide.jade
+include ./blocks/cover.jade
+include ./blocks/quote.jade
+include ./blocks/frame.jade
+
+- var title = "Готовим модульную архитектуру из JS-лапши"
+
+doctype html
+html(lang='ru')
+  head
+    title !{title}
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="vendor/highlight.css")
+    link(rel='stylesheet', href='shower/themes/ribbon/styles/screen-16x10.css')
+    link(rel='stylesheet', href='theme.css')
+    link(rel='stylesheet', href='slides.css')
+  body.shower.list
+    header.caption
+      h1 !{title}
+    +slide({name: 'cover', header: title, classes:'cover'})
+      p Александра Шинкевич (
+        a(href='https://twitter.com/neesoglasnaja') @neesoglasnaja
+        | )
+    
+    .progress
+    script(src='shower/shower.min.js')
+    script(src="vendor/highlight.min.js")
+    script.
+      hljs.initHighlightingOnLoad();

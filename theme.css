@@ -1,10 +1,10 @@
 .slide::after {
-  background: #2f6155;
+  background: #b5a061;
   height: 75px;
   border-radius: 0 0 10px 10px;
 }
 .slide h2 {
-  color: #2f6155;
+  color: #b5a061;
 }
 .html {
   color: #666;
@@ -22,7 +22,7 @@
   color: #000 !important;
 }
 .important {
-  background: #285d5e;
+  background: #403c32;
   color: #fff;
 }
 .important * {
@@ -39,7 +39,7 @@
   color: #999;
 }
 .progress {
-  border-color: #2f6155 rgba(0,0,0,0) #2f6155 #2f6155;
+  border-color: #b5a061 rgba(0,0,0,0) #b5a061 #b5a061;
 }
 .tag {
   color: #ad1531;
@@ -71,7 +71,7 @@
   opacity: 0;
 }
 .slide.menu-slide .selected-item {
-  background-color: #2f6155;
+  background-color: #b5a061;
   display: inline-block;
 }
 .slide.menu-slide .transparent {
@@ -80,7 +80,7 @@
 .slide.label-header h2 {
   display: inline-block;
   padding: 10px 30px;
-  background-color: #2f6155;
+  background-color: #b5a061;
   color: #fff;
 }
 .slide.label-header h2.shout {
@@ -91,7 +91,7 @@
   font-size: 120px;
 }
 .label {
-  background-color: #2f6155;
+  background-color: #b5a061;
   color: #fff;
   padding: 0 10px;
   display: inline-block;

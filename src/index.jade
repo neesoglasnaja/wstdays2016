@@ -21,9 +21,9 @@ html(lang='ru')
       h1 !{title}
     +slide({name: 'cover', header: title, classes:'cover'})
       p Александра Шинкевич (
-        a(href='https://twitter.com/neesoglasnaja') @neesoglasnaja
+        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
         | )
-      +cover('pictures/gatloc-universe.jpg')
+      +cover('pictures/cover.jpg')
     +slide({header: "MV*", classes:'cover menu-slide'}) 
       ul
         li MVC
@@ -33,7 +33,7 @@ html(lang='ru')
     +slide({header: "Flux", shout: true})
     +slide({classes:'cover'}) 
       h2.shout.smaller
-        a(href="http://bit.ly/fc2016-mv") bit.ly/fc2016-mv
+        a(href="http://bit.ly/wsd2016-mv" target="_blank") bit.ly/wsd2016-mv
       +cover('pictures/blur-cover.jpg')  
     // Пример
     +slide({header: "Пример", shout: true, classes: 'cover label-header'})
@@ -972,8 +972,12 @@ html(lang='ru')
     +slide({header: "Вместо вывода", classes: "label-header"})
       img(src='pictures/today.jpg', width="100%")
     +slide({name: 'theend', header: "Вопросы?", shout: true, classes: 'cover label-header'})
-      p.end-link
-        a(href="http://bit.ly/fc2016-mv") bit.ly/fc2016-mv
+      p.end-link 
+        a.bigger(href="http://bit.ly/wsd2016-mv" target="_blank") bit.ly/wsd2016-mv
+        br
+        | Александра Шинкевич (
+        a(href='https://twitter.com/neesoglasnaja' target="_blank") @neesoglasnaja
+        | )
       +cover('pictures/blur-cover.jpg')
     
     .progress
